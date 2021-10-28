@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+p {
+    font-family: Barlow;
+}
+
 header {
     background-image: url('./images/desktop/image-header.jpg');
     height: 800px;
@@ -64,4 +68,104 @@ h1 {
     margin: 90px 0 120px;
     font-size: 42px;
     letter-spacing: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, 42vw);
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.transform.img {
+    background-image: url('./images/desktop/image-transform.jpg');
+}
+
+.text {
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: Fraunces;
+    font-weight: 900;
+    font-size: 38px;
+    color: hsl(212, 27%, 19%);
+}
+
+.text p {
+    margin: 7% 0;
+    color: hsl(232, 10%, 55%);
+    line-height: 1.6;
+}
+
+.text a {
+    text-decoration: none;
+    color:hsl(212, 27%, 19%);
+    font-family: Fraunces;
+    display: inline-table;
+}
+
+.line {
+    width:110%; 
+    height:9px; 
+    border-radius: 5px;
+    position: relative;
+    top: -7px;
+    right: 5px;
+    z-index: -1;
+}
+
+.transform .line {
+    background-color: hsl(51, 100%, 85%);
+}
+
+.transform a:hover .line {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.stand-out .line {
+    background-color: hsl(7, 99%, 85%);
+}
+
+.stand-out a:hover .line {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.stand-out.img {
+    background-image: url('./images/desktop/image-stand-out.jpg');
+}
+
+.graphic {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    color: hsl(167, 40%, 24%);
+}
+
+.photography {
+    background-image: url('./images/desktop/image-photography.jpg');
+    color: hsl(198, 62%, 26%);
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.centered p {
+    margin: 6% 25% 10%;
+}
+
+h3 {
+    font-family: Fraunces;
+    font-size: 26px;
 }
