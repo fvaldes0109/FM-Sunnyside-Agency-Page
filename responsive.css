@@ -91,6 +91,54 @@
         padding: 25px 0;
         font-size: 15px;
     }
+
+    .options-icon-container {
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 90px;
+        right: 6%;
+        flex-direction: column;
+        background-color: white;
+        width: 88%;
+        max-width: 300px;
+        padding: 20px 0 10px;
+    }
+
+    .nav-items li {
+        margin: 10px 0;
+    }
+
+    .nav-items li a {
+        color: hsl(213, 9%, 39%);
+    }
+
+    button {
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    button:hover {
+        color: black;
+        background-color: hsl(51, 100%, 85%);
+    }
+
+    .triangle {
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 65px;
+        right: 6%;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 25px solid white;
+    }
 }
 
 @media(max-width: 400px) {

@@ -22,6 +22,10 @@ nav {
     padding: 20px;
 }
 
+.options-icon-container {
+    display: none;
+}
+
 ul {
     display: flex;
     align-items: center;
